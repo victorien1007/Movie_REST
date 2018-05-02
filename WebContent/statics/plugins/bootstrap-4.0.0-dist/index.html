@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>card</title> 
+  <!-- Bootstrap Styles-->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <style type="text/css">
+
+    .input-title{
+      margin:0px 20px 10px 20px;
+      border: 1px solid rgba(36, 150, 231, 0.88);
+      border-radius:8px 8px 8px 8px;
+    }
+
+    .input-poweranalysis{
+      width: 40px;
+      background-color:rgba(188, 158, 158, 0.1);
+      border: 1.5px solid rgba(36, 150, 231, 0.88);
+      margin-right: 5px;
+      margin-left: 10px;
+    }
+    .row-cell{
+      margin:8px 8px 8px 8px;
+      font-size: 15px
+    }
+    .card-box{
+      background-color:rgba(188, 158, 158, 0.1);
+      border: 1px solid rgba(36, 150, 231, 0.88);
+      width: 100%;
+      height: 180px;
+      margin:10px 10px 5px 10px
+    }
+    .border-title{
+      width:160px;
+      margin-top:-10px;
+      margin-left:30px;
+      background:#29305a;
+      position:relative;
+      display:block;
+      border-radius:8px 8px 8px 8px;
+      text-align: center;
+    }
+    .card-box-3{
+      background-color:rgba(188, 158, 158, 0.1);
+      border: 1px solid rgba(36, 150, 231, 0.88);
+      width: 100%;
+      height: 180px;
+      margin:10px 10px 5px 10px
+    }
+
+    #cardbox-col21{
+      height: 360px;
+    }
+
+    .card-box-11-before{
+      margin-left: 20px;
+    }
+
+    .card-input-border{
+      width: 40px;
+      background-color:rgba(188, 158, 158, 0.1);
+      border: 1.5px solid rgba(36, 150, 231, 0.88);
+      margin-right: 5px;
+      margin-left: 20px;
+      margin-bottom: 8px;
+    }
+
+    .card-box-22-before{
+      margin-left: 20px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container-fluid" style="background-color: #141ac6;color:#f7f7f9; width: 100%;">
+  <div class="row" style="height: 60px">
+    <div class="col-sm-12" align="center" style="font-size: 25px;margin-top: 10px;color: #00ff00">
+      <div class="container" style="width: 200px;">
+        <label>供电能力分析</label>
+      </div>
+    </div>
+  </div>
+  <div class="row input-title">
+    <div class="col-sm-3" >
+      <div class="row row-cell">
+        <label>总供电能力:</label>
+        <input class="input-poweranalysis" style="margin-left: 32px" type="text" name="lineCount">
+        <label>兆瓦</label>
+      </div>
+    </div>
+    <div class="col-sm-3" >
+      <div class="row row-cell">
+        <label>10KV实时总负荷:</label>
+        <input class="input-poweranalysis" type="text" name="lineCount">
+        <label>兆瓦</label>
+      </div>
+    </div>
+    <div class="col-sm-3" >
+      <div class="row row-cell">
+        <label>馈线N-1通过率:</label>
+        <input class="input-poweranalysis" type="text" name="lineCount">
+        <label>%</label>
+      </div>
+    </div>
+    <div class="col-sm-3" >
+      <div class="row row-cell">
+        <label>负荷密度:</label>
+        <input class="input-poweranalysis" type="text" name="lineCount">
+        <label>兆瓦/平方公里</label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="row">
+       <div class="card-box" style="height: 150px">
+            <label class="border-title">线路联络分析</label>
+            <div class="row">
+              <div class="col-sm-7" >
+                <div class="row">
+                  <div class="col-sm-12" align="center">
+                    <label class="card-box-11-before" style="margin-right: 16px">单辐射线路数量:</label>
+                    <input class="card-input-border" type="text" name="dfsxlcount">
+                    <label>条</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12" align="center">
+                    <label class="card-box-11-before">多分段单联络数量:</label>
+                    <input class="card-input-border" type="text" name="dfsxlcount">
+                    <label>条</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12" align="center">
+                    <label class="card-box-11-before">多分段单联络数量:</label>
+                    <input class="card-input-border" type="text" name="dfsxlcount">
+                    <label>条</label>
+                  </div>
+                </div>                
+              </div>
+              <div class="col-sm-5">
+                
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+         <div class="card-box">
+              <label class="border-title">重要用户线路</label>
+         </div>
+      </div>
+       <div class="row">
+        <div class="card-box">
+         <label class="border-title">重要用户电源分析</label>
+        </div>
+      </div>
+    </div>    
+    <div class="col-sm-5">
+      <div class="row">
+        <div class="card-box" id="cardbox-col21">
+          <label class="border-title">配网区域负荷密度</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-box" style="height: 220px">
+          <label class="border-title">线路联络点分析</label>
+          <div class="row">
+              <div class="col-sm-8" >
+                <div class="row">
+                  <div class="col-sm-12" align="left" style="margin-left: 30px">
+                    <label class="card-box-22-before" style="">非自动化开关:</label>
+                    <input class="card-input-border" type="text" name="dfsxlcount">
+                    <label>台</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12" align="left" style="margin-left: 30px">
+                    <label class="card-box-22-before">挂牌:</label>
+                    <input class="card-input-border" style="margin-left: 84px" type="text" name="dfsxlcount">
+                    <label>台</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12" align="left" style="margin-left: 30px">
+                    <label class="card-box-22-before">通信异常:</label>
+                    <input class="card-input-border" style="margin-left: 52px" type="text" name="dfsxlcount">
+                    <label>台</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12" align="left" style="margin-left: 30px">
+                    <label class="card-box-22-before">就地状态:</label>
+                    <input class="card-input-border" style="margin-left: 52px" type="text" name="dfsxlcount">
+                    <label>台</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12" align="left" style="margin-left: 30px">
+                    <label class="card-box-22-before">设备故障:</label>
+                    <input class="card-input-border" style="margin-left: 52px" type="text" name="dfsxlcount">
+                    <label>台</label>
+                  </div>
+                </div>                
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="row">
+        <div class="card-box-3" style="height: 250px">
+          <label class="border-title">线路运行状态</label>
+          <div class="row">
+            
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-box-3">
+          <label class="border-title">配变运行状态</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-box-3" style="height: 160px">
+          <label class="border-title">线路N-1分析</label>
+           <div class="row">
+              <div class="col-sm-8">
+                <div class="row">
+                  <div class="col-sm-12" align="center">
+                    <label class="card-box-22-before">单辐射线路:</label>
+                    <input class="card-input-border" style="margin-left: 35px" type="text" name="dfsxlcount">
+                    <label>条</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12" align="center">
+                    <label class="card-box-22-before">联络异常:</label>
+                    <input class="card-input-border" style="margin-left: 50px" type="text" name="dfsxlcount">
+                    <label>条</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12" align="center">
+                    <label class="card-box-22-before">馈线容量不足:</label>
+                    <input class="card-input-border" type="text" name="dfsxlcount">
+                    <label>条</label>
+                  </div>
+                </div>
+             
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+	<!-- Bootstrap Js -->
+  <script src="js/jquery.1.12.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
